@@ -1,0 +1,15 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.count{
+    font-size: 22px;
+    .heading{
+        color: rgba(255, 255, 255, 0.5);
+        text-transform: capitalize;
+    }
+    .number{
+        font-weight: 600;
+    }
+}

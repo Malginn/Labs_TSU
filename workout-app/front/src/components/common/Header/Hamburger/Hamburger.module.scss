@@ -1,0 +1,47 @@
+@import '../../../../scss/variables';
+@import '../../../../scss/animation.scss';
+
+.wrapper{
+    position: relative;
+    button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        >img{
+            animation: opacity 0.4s;
+        }
+    }
+    >.menu{
+        display: none;
+        position: absolute;
+        top: calc(100% + 8px);
+        right:0;
+        min-width: 116px;
+
+        background-color: #fff;
+        color: #000;
+        padding:12px 14px;
+        font-size: 14px;
+        box-shadow: $bx-16;
+        border-radius: 10px 0px 10px 10px; //не со всех сторон закругление
+        animation: opacity 0.4s;
+        &.show{
+            display: block;
+        }
+
+        >ul{
+            list-style: none;
+            a{
+                color:#000;
+                text-decoration: none;
+                white-space: nowrap;
+                transition: color .2s ease-in;
+                &:hover, &:active{
+                    color: $accent;
+                    margin: 4px 0px;
+                }
+            }
+        }
+    }
+}
